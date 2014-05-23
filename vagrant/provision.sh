@@ -27,3 +27,6 @@ sudo service mysql restart
 # Create the necessary tables/users for MySQL.
 /vagrant/createdb.sh txtmindus txtmindus txtmindus
 /vagrant/createdb.sh txtmindus_test txtmindus_test txtmindus_test
+
+# Run any database migrations
+/var/www/txtmindus/protected/yiic migrate --interactive=0
