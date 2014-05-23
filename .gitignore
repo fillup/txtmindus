@@ -1,6 +1,10 @@
-assets/*
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
-themes/classic/views/
+*.lock
+nbproject/
+.DS_Store
+application/vendor/
+*.local.php
+local.php
+phpinfo.php
+*.rpm
+.vagrant/
+.idea/

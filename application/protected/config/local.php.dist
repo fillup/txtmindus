@@ -1,0 +1,35 @@
+<?php
+
+return array(
+    'modules' => array(
+        'gii' => array(
+            'class' => 'system.gii.GiiModule',
+            'password' => '',
+
+            // If removed, Gii defaults to localhost only. Edit carefully to
+            // taste.
+            'ipFilters' => array('127.0.0.1', '::1','192.168.*.*'),
+        ),
+    ),
+    'components' => array(
+        'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=txtmindus',
+            'username' => 'txtmindus',
+            'password' => 'txtmindus',
+//            'connectionString' => 'mysql:host=localhost;dbname=txtmindus_test',
+//            'username' => 'txtmindus_test',
+//            'password' => 'txtmindus_test',
+        ),
+    ),
+    'params' => array(
+        'github' => array(
+            'client_id' => '',
+            'client_secret' => '',
+            'return_path' => 'auth/return',
+            'scope' => 'user:email',
+            'auth_url' => 'https://github.com/login/oauth/authorize',
+            'token_url' => 'https://github.com/login/oauth/access_token',
+            'user_url' => 'https://api.github.com/user',
+        ),
+    ),
+);
