@@ -4,7 +4,7 @@ return array(
     'modules' => array(
         'gii' => array(
             'class' => 'system.gii.GiiModule',
-            'password' => '',
+            'password' => 'TxtminusP@ss!',
 
             // If removed, Gii defaults to localhost only. Edit carefully to
             // taste.

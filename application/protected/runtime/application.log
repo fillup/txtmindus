@@ -1,0 +1,1337 @@
+2014/05/22 20:29:30 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE '{{user}}' (
+	"id" char(32) null,
+	"email" varchar(150) not null,
+	"created" datetime null,
+	"api_token" char(32) null
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci
+2014/05/22 20:29:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE '{{user}}' (
+	"id" char(32) null,
+	"email" varchar(150) not null,
+	"created" datetime null,
+	"api_token" char(32) null
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci.
+2014/05/22 20:34:56 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE '{{user}}' (
+	"id" char(32) null,
+	"email" varchar(150) not null,
+	"created" datetime null,
+	"api_token" char(32) null
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci
+2014/05/22 20:34:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE '{{user}}' (
+	"id" char(32) null,
+	"email" varchar(150) not null,
+	"created" datetime null,
+	"api_token" char(32) null
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci.
+2014/05/22 20:35:56 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE '{{user}}' (
+	"id" char(32) null,
+	"email" varchar(150) not null,
+	"created" datetime null,
+	"api_token" char(32) null
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci
+2014/05/22 20:35:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "ENGINE": syntax error. The SQL statement executed was: CREATE TABLE '{{user}}' (
+	"id" char(32) null,
+	"email" varchar(150) not null,
+	"created" datetime null,
+	"api_token" char(32) null
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci.
+2014/05/22 20:36:42 [error] [exception.CDbException] SQLSTATE[HY000] [1045] Access denied for user 'txtmindus'@'localhost' (using password: YES)
+2014/05/22 20:36:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/db/CDbConnection.php:388
+Stack trace:
+#0 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/cli/commands/MigrateCommand.php(442): CModule->getComponent('db')
+#4 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/cli/commands/MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/cli/commands/MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#12 /Users/phillips/Documents/Code/txtmindus/application/vendor/yiisoft/yii/framework/yiic.php(33): CApplication->run()
+#13 /Users/phillips/Documents/Code/txtmindus/application/protected/yiic.php(24): require_once('/Users/phillips...')
+#14 /Users/phillips/Documents/Code/txtmindus/application/protected/yiic(4): require_once('/Users/phillips...')
+#15 {main}
+---
+2014/05/22 20:34:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'txtmindus.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+2014/05/22 20:35:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'txtmindus.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+2014/05/22 20:35:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'txtmindus.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+2014/05/22 20:44:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:44:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:44:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "auth/login".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/login')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/auth/login
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:44:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/login
+---
+2014/05/22 20:44:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/login
+---
+2014/05/22 20:45:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:45:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:45:03 [error] [php] include(Utils.php): failed to open stream: No such file or directory (/var/www/txtmindus/vendor/yiisoft/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(29): spl_autoload_call()
+#1 /var/www/txtmindus/protected/controllers/AuthController.php(8): GitHubUserIdentity->getLoginUrl()
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionLogin()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): AuthController->runAction()
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): AuthController->runActionWithFilters()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): AuthController->run()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/txtmindus/public/index.php(40): CWebApplication->run()
+REQUEST_URI=/auth/login
+2014/05/22 20:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/login
+---
+2014/05/22 20:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/login
+---
+2014/05/22 20:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 20:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:23:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:23:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:25:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:25:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/index-test.php
+---
+2014/05/22 21:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/index-test.php
+---
+2014/05/22 21:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:25:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:28:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:28:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:30:31 [error] [exception.Exception] exception 'Exception' with message 'Unable to create new user: Array
+(
+    [email] => Array
+        (
+            [0] => Email is invalid.
+        )
+
+)
+' in /var/www/txtmindus/protected/models/User.php:31
+Stack trace:
+#0 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(60): User::findOrCreate(Array)
+#1 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#10 {main}
+REQUEST_URI=/auth/return?code=4d8b4006054e0ce28832&state=409eaf121ed739fc96661361ee032f7f
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:30:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=4d8b4006054e0ce28832&state=409eaf121ed739fc96661361ee032f7f
+---
+2014/05/22 21:30:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=4d8b4006054e0ce28832&state=409eaf121ed739fc96661361ee032f7f
+---
+2014/05/22 21:31:05 [error] [exception.Exception] exception 'Exception' with message 'Unable to create new user: Array
+(
+    [email] => Array
+        (
+            [0] => Email is invalid.
+        )
+
+)
+' in /var/www/txtmindus/protected/models/User.php:31
+Stack trace:
+#0 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(60): User::findOrCreate(Array)
+#1 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#10 {main}
+REQUEST_URI=/auth/return?code=5bd172e505e39f8392ca&state=c5a6f68a7affe368c8d3cae0a2dd4814
+HTTP_REFERER=http://txtmindus.local/auth/return?code=4d8b4006054e0ce28832&state=409eaf121ed739fc96661361ee032f7f
+---
+2014/05/22 21:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=5bd172e505e39f8392ca&state=c5a6f68a7affe368c8d3cae0a2dd4814
+---
+2014/05/22 21:31:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=5bd172e505e39f8392ca&state=c5a6f68a7affe368c8d3cae0a2dd4814
+---
+2014/05/22 21:31:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:31:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:31:19 [error] [php] Undefined variable: user (/var/www/txtmindus/protected/components/GitHubUserIdentity.php:60)
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): AuthController->runAction()
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): AuthController->runActionWithFilters()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): AuthController->run()
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/txtmindus/public/index.php(40): CWebApplication->run()
+REQUEST_URI=/auth/return?code=260561ca7f7c26f1e2da&state=00b0042e2eac340b41f16757e6755c13
+2014/05/22 21:31:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=260561ca7f7c26f1e2da&state=00b0042e2eac340b41f16757e6755c13
+---
+2014/05/22 21:31:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=260561ca7f7c26f1e2da&state=00b0042e2eac340b41f16757e6755c13
+---
+2014/05/22 21:31:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:31:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:31:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:16 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:828
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1746): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1124): CActiveRecord->updateByPk(NULL, Array)
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->update(NULL)
+#4 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(62): CActiveRecord->save()
+#5 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#11 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#12 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#14 {main}
+REQUEST_URI=/auth/return?code=c20ab67dfe0aa1525248&state=779c01558cd823f57603844fcbcd8f14
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=c20ab67dfe0aa1525248&state=779c01558cd823f57603844fcbcd8f14
+---
+2014/05/22 21:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=c20ab67dfe0aa1525248&state=779c01558cd823f57603844fcbcd8f14
+---
+2014/05/22 21:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:33:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:33:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:34:13 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:828
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1746): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1124): CActiveRecord->updateByPk(NULL, Array)
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->update(NULL)
+#4 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(62): CActiveRecord->save()
+#5 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#11 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#12 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#14 {main}
+REQUEST_URI=/auth/return?code=4d9d3c2bc6c783bafca5&state=8b230fa3cbf1f0613def2e2f9a068d33
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:34:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=4d9d3c2bc6c783bafca5&state=8b230fa3cbf1f0613def2e2f9a068d33
+---
+2014/05/22 21:34:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/auth/return?code=4d9d3c2bc6c783bafca5&state=8b230fa3cbf1f0613def2e2f9a068d33
+---
+2014/05/22 21:34:40 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:828
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1746): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1124): CActiveRecord->updateByPk(NULL, Array)
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->update(NULL)
+#4 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(62): CActiveRecord->save()
+#5 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#11 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#12 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#14 {main}
+REQUEST_URI=/index-test.php/auth/return?code=c9d2cbaaff79a4291924&state=28d9cbb5554fb4cfd2e92433c8fb6e83
+HTTP_REFERER=http://txtmindus.local/auth/return?code=4d9d3c2bc6c783bafca5&state=8b230fa3cbf1f0613def2e2f9a068d33
+---
+2014/05/22 21:35:32 [error] [exception.CDbException] exception 'CDbException' with message 'Column name must be either a string or an array.' in /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php:828
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/schema/CDbCommandBuilder.php(621): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), NULL, Array, NULL)
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1746): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), NULL, '', Array)
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(1124): CActiveRecord->updateByPk(NULL, Array)
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/db/ar/CActiveRecord.php(806): CActiveRecord->update(NULL)
+#4 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(62): CActiveRecord->save()
+#5 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#11 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#12 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#14 {main}
+REQUEST_URI=/index-test.php/auth/return?code=ae7da1a40acf9f91fbde&state=f751780597095fbca4282e2b69c88782
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/me
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 21:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 21:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/me
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:39:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#3 {main}
+REQUEST_URI=/index-test.php/me
+---
+2014/05/22 21:39:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#3 {main}
+REQUEST_URI=/index-test.php/me
+---
+2014/05/22 21:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/index-test.php/me
+---
+2014/05/22 21:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/index-test.php/me
+---
+2014/05/22 21:40:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me/oindex".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me/oindex')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#3 {main}
+REQUEST_URI=/index-test.php/me/oindex
+---
+2014/05/22 21:40:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/index-test.php/me/oindex
+---
+2014/05/22 21:40:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/index-test.php/me/oindex
+---
+2014/05/22 21:40:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me/index".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me/index')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#3 {main}
+REQUEST_URI=/index-test.php/me/index
+---
+2014/05/22 21:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/index-test.php/me/index
+---
+2014/05/22 21:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/index-test.php/me/index
+---
+2014/05/22 21:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:43:05 [error] [exception.Exception] exception 'Exception' with message 'Unable to create new user: Array
+(
+    [name] => Array
+        (
+            [0] => Name cannot be blank.
+        )
+
+)
+' in /var/www/txtmindus/protected/models/User.php:31
+Stack trace:
+#0 /var/www/txtmindus/protected/components/GitHubUserIdentity.php(60): User::findOrCreate('phillip_shipley...')
+#1 /var/www/txtmindus/protected/controllers/AuthController.php(29): GitHubUserIdentity->authenticate()
+#2 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): AuthController->actionReturn()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): CController->run('return')
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('auth/return')
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/txtmindus/public/index-test.php(38): CApplication->run()
+#10 {main}
+REQUEST_URI=/index-test.php/auth/return?code=1a7c569b45083b1270cb&state=16fdf23e6671eab82f307816a8ab9d06
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/me
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 21:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 21:44:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "me/index".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('me/index')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/me/index
+---
+2014/05/22 21:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:46:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:46:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:50:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:51:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me/index
+---
+2014/05/22 21:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 21:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/
+---
+2014/05/22 22:53:08 [error] [php] Undefined variable: reminder (/var/www/txtmindus/protected/views/me/index.php:14)
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(869): MeController->renderFile()
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(782): MeController->renderPartial()
+#2 /var/www/txtmindus/protected/controllers/MeController.php(11): MeController->render()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): MeController->actionIndex()
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): MeController->runAction()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): MeController->runActionWithFilters()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): MeController->run()
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/txtmindus/public/index.php(40): CWebApplication->run()
+REQUEST_URI=/me
+2014/05/22 22:53:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:53:46 [error] [php] Trying to get property of non-object (/var/www/txtmindus/protected/views/me/index.php:14)
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(869): MeController->renderFile()
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(782): MeController->renderPartial()
+#2 /var/www/txtmindus/protected/controllers/MeController.php(11): MeController->render()
+#3 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/actions/CInlineAction.php(49): MeController->actionIndex()
+#4 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(286): MeController->runAction()
+#6 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CController.php(265): MeController->runActionWithFilters()
+#7 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(282): MeController->run()
+#8 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/txtmindus/public/index.php(40): CWebApplication->run()
+REQUEST_URI=/me
+2014/05/22 22:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:54:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:54:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:56:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:58:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:58:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:58:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 22:58:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:00:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:00:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:06:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/swank.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/swank.js')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/swank.js
+HTTP_REFERER=http://txtmindus.local/me
+---
+2014/05/22 23:06:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/handlebars-v1.3.0.js".' in /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/txtmindus/vendor/yiisoft/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('js/handlebars-v...')
+#1 /var/www/txtmindus/vendor/yiisoft/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/txtmindus/public/index.php(40): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/handlebars-v1.3.0.js
+HTTP_REFERER=http://txtmindus.local/me
+---

@@ -57,9 +57,9 @@ class GitHubUserIdentity extends CUserIdentity
                     $userInfo = $this->getUserInformation();
                     if ($userInfo) {
                         try {
-                            $user = User::findOrCreate($userInfo['emails'][0]);
+                            $user = User::findOrCreate($userInfo['emails'][0]['email']);
+                            $user->access_token = $results['access_token'];
                             $user->name = $userInfo['name'];
-                            $user->access_token = $this->access_token;
                             if ($user->save()) {
                                 $this->loadIdentity($user);
                             } else {
@@ -67,6 +67,7 @@ class GitHubUserIdentity extends CUserIdentity
                                 $this->errorCode = self::ERROR_UNKNOWN_IDENTITY;
                             }
                         } catch (Exception $e) {
+                            throw $e;
                             Yii::app()->user->setFlash('danger', "There was a problem creating your account, maybe try again in a moment? (".__LINE__.")");
                             $this->errorCode = self::ERROR_UNKNOWN_IDENTITY;
                         }
@@ -142,7 +143,6 @@ class GitHubUserIdentity extends CUserIdentity
     public function loadIdentity(UserBase $user)
     {
         $this->setState('user', $user);
-        $this->setState('role', $user->role);
         $this->id = $user->id;
         $this->username = $user->email;
         $this->name = $user->name;
