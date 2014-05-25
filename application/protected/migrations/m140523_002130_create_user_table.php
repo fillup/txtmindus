@@ -13,8 +13,6 @@ class m140523_002130_create_user_table extends CDbMigration
             'created' => 'datetime null',
             'access_token' => 'char(40) null',
             'api_token' => 'char(32) null',
-            'nexmo_key' => 'varchar(32) null',
-            'nexmo_secret' => 'varchar(32) null',
         ),'ENGINE = InnoDB DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci');
         $this->addPrimaryKey('pk_user', '{{user}}', 'id');
         $this->createIndex('idx_user_email', '{{user}}', 'email', true);

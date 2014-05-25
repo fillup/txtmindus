@@ -1,28 +1,28 @@
 <?php
 
 /**
- * This is the model class for table "user".
+ * This is the model class for table "service_account".
  *
- * The followings are the available columns in table 'user':
+ * The followings are the available columns in table 'service_account':
  * @property string $id
- * @property string $email
- * @property string $name
- * @property string $created
- * @property string $access_token
- * @property string $api_token
+ * @property string $user_id
+ * @property string $provider
+ * @property string $key
+ * @property string $secret
+ * @property string $extra
  *
  * The followings are the available model relations:
  * @property Message[] $messages
- * @property ServiceAccount[] $serviceAccounts
+ * @property User $user
  */
-class UserBase extends CActiveRecord
+class ServiceAccountBase extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'user';
+		return 'service_account';
 	}
 
 	/**
@@ -33,15 +33,14 @@ class UserBase extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email', 'required'),
-			array('id, api_token', 'length', 'max'=>32),
-			array('email', 'length', 'max'=>150),
-			array('name', 'length', 'max'=>64),
-			array('access_token', 'length', 'max'=>40),
-			array('created', 'safe'),
+			array('user_id, provider', 'required'),
+			array('id, user_id', 'length', 'max'=>32),
+			array('provider', 'length', 'max'=>16),
+			array('key, secret', 'length', 'max'=>128),
+			array('extra', 'length', 'max'=>1024),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, email, name, created, access_token, api_token', 'safe', 'on'=>'search'),
+			array('id, user_id, provider, key, secret, extra', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,8 +52,8 @@ class UserBase extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'messages' => array(self::HAS_MANY, 'Message', 'user_id'),
-			'serviceAccounts' => array(self::HAS_MANY, 'ServiceAccount', 'user_id'),
+			'messages' => array(self::HAS_MANY, 'Message', 'service_account_id'),
+			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 		);
 	}
 
@@ -65,11 +64,11 @@ class UserBase extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'email' => 'Email',
-			'name' => 'Name',
-			'created' => 'Created',
-			'access_token' => 'Access Token',
-			'api_token' => 'Api Token',
+			'user_id' => 'User',
+			'provider' => 'Provider',
+			'key' => 'Key',
+			'secret' => 'Secret',
+			'extra' => 'Extra',
 		);
 	}
 
@@ -92,11 +91,11 @@ class UserBase extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('created',$this->created,true);
-		$criteria->compare('access_token',$this->access_token,true);
-		$criteria->compare('api_token',$this->api_token,true);
+		$criteria->compare('user_id',$this->user_id,true);
+		$criteria->compare('provider',$this->provider,true);
+		$criteria->compare('key',$this->key,true);
+		$criteria->compare('secret',$this->secret,true);
+		$criteria->compare('extra',$this->extra,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -107,7 +106,7 @@ class UserBase extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return UserBase the static model class
+	 * @return ServiceAccountBase the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
